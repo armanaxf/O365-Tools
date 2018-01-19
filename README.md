@@ -20,7 +20,7 @@ Windows Powershell 5.1
 
 ## Authors
 
-* **Josh Giles** - *Initial work* - armanaxf](https://github.com/armanaxf)
+* **Josh G** - *Initial work* - [armanaxf](https://github.com/armanaxf)
 
 
 ## License
