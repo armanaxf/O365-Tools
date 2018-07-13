@@ -1,10 +1,9 @@
-﻿function new-o365session {
-    Set-ExecutionPolicy RemoteSigned
-    $Credential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-Module (Import-PSSession $Session)
-}
-
+﻿<#
+.Synopsis
+Conencts to O365 and Exchange Online.
+.DESCRIPTION
+Establishes a simultaneous connection to O365 and Exchange Online Powershell
+#>
 function Connect-O365 {
     $o365cred = Get-Credential 
     $session365 = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.outlook.com/powershell/" -Credential $o365cred -Authentication Basic -AllowRedirection 
