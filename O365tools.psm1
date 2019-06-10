@@ -39,7 +39,7 @@ Param(
 
  }
 
- function add-365license
+ function add-365license {
  <#
  .SYNOPSIS
  Adds a license to the user
@@ -57,3 +57,4 @@ Param(
 )
  set-msoluserlicense -addlicenses $License -userprincipalname $email
  }
+}
